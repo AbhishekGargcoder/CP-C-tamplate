@@ -89,6 +89,18 @@ void toBinary(int n)
     for(auto bit : bits)
         cout<<bit;
 }
+/*
+    Think Greedy - (locally Optimal sol)
+    Think Brute Force
+    Think sol in reverse order
+    Think DP [ check constraints carefully ]
+    Check Base cases for DP & preove sol for Greedy
+    Think Graph
+    Think in Binary - set Bit, 1<<n
+    Think Binary Search - Monotonic data
+    if sorted - go for binary search , greedy , DP,Heaps
+    contigous data - go for Heaps, sliding window , 2-pointer
+*/
 void solve(){
     // main logic for a problem
 }
