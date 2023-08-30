@@ -107,6 +107,7 @@ void solve(){
 int main()
 {
     int q;
+    cin>>q;
     while(q--){
         solve();
     }
