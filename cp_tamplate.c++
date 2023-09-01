@@ -43,7 +43,7 @@ void swap(ll &x, ll &y)
     y = x - y;
     x = x - y;
 }
-int gcd(int a,int b){    // O(log min(a,b))
+long int gcd(long int a,long int b){    // O(log min(a,b))
     while(a){  // assume : b > a , if(a>b) => b = a,a =b
         int temp = b%a;
         b = a;
@@ -51,7 +51,7 @@ int gcd(int a,int b){    // O(log min(a,b))
     }
     return b;
 }
-int isPrime(int n){  //  O(sqrt(n)/6) 
+bool isPrime(long int n){  //  O(sqrt(n)/6) 
         if(n==1) return false;
         if(n== 2 || n == 3) return true;
         if(n%2==0 || n% 3==0) return false;
@@ -60,13 +60,11 @@ int isPrime(int n){  //  O(sqrt(n)/6)
                 return false;
         return true;
 }
-
 long double myPow(double a, int n) {        // O(log2 n)
     int m = n;
      if(n<0){
        if(n==-2147483648){ n= 2147483647;}
         else { n= -n;}}
-       
        if(((m&1)==0)&&a<0) a= -a;
        long double res = 1;
         while(n){
@@ -75,7 +73,6 @@ long double myPow(double a, int n) {        // O(log2 n)
            n = n>>1; // n = n/2
         }
         if(m<0) return (long double)1/res;
-        cout<<INT_MIN<<" "<<INT_MAX;
         return res;
     }
 void toBinary(int n)
@@ -86,7 +83,7 @@ void toBinary(int n)
         n = n>>1; // n = n/2;
     }
     reverse(bits.begin(),bits.end());
-    for(auto bit : bits)
+    for(bool bit : bits)
         cout<<bit;
 }
 /*
