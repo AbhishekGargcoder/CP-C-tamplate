@@ -1,2 +1,2 @@
 # Competitive programming template in C++ for CP guy
-A CP TEMPLATE in c++ 
+My personal CP TEMPLATE in c++ that I often used in competitive programming 
